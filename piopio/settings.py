@@ -30,6 +30,10 @@ try:
 except KeyError:
     DEBUG = False
 
+ADMINS = [
+    (os.environ['ADMIN_NAME'], os.environ['ADMIN_EMAIL']),
+    ]
+
 if DEBUG:
     ALLOWED_HOSTS = ['*']
 else:
