@@ -12,3 +12,6 @@ psycopg2
 
 # use database urls to populate Django DATABASES dictionary
 dj-database-url
+
+# Use Twitter Bootstrap
+django-bootstrap3
