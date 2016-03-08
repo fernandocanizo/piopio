@@ -1,0 +1,9 @@
+django
+django-extensions
+werkzeug
+django-jsonfield
+django-debug-toolbar
+python-slugify
+django-pgcli
+bpython
+gunicorn
