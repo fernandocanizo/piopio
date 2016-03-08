@@ -8,7 +8,7 @@ export SECRET_KEY='change_me'
 
 # DB URL should suffice, but if you need more, you can use full URL:
 # postgres://username:password@localhost/database
-export DATABASE="postgres://localhost/${PROJECT_NAME}"
+export DATABASE_URL="postgres://localhost/${PROJECT_NAME}"
 
 # You must have created the virtual environment with:
 # pyvenv /path/to/your/new/virtual/environment
