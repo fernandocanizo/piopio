@@ -7,3 +7,8 @@ python-slugify
 django-pgcli
 bpython
 gunicorn
+# to handle Postgresql databases
+psycopg2
+
+# use database urls to populate Django DATABASES dictionary
+dj-database-url
