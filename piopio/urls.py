@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 from pips.views import Index, Profile
 
 
@@ -25,3 +27,7 @@ urlpatterns = [
     url(r'^$', Index.as_view(), name='index'),
     url(r'^user/(\w+)$', Profile.as_view()),
     ]
+
+# To serve static files in development
+# Won't work when settings['DEBUG'] = False
+urlpatterns += staticfiles_urlpatterns()
