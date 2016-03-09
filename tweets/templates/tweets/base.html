@@ -1,0 +1,25 @@
+{% load bootstrap3 %}
+<html>
+	<head>
+		{% bootstrap_css %}
+	</head>
+	<body>
+		{% block bootstrap3_content %}
+			<div class="container">
+				<h1>{% block title %}{{ title }}{% endblock %}</h1>
+
+				<p>
+					<a href="{% url 'index' %}">home</a>
+				</p>
+
+				{# Display django.contrib.messages as Bootstrap alerts #}
+				{% autoescape off %}{% bootstrap_messages %}{% endautoescape %}
+
+				{% block content %}(no content){% endblock %}
+			</div>
+
+		{% endblock %}
+
+		{% bootstrap_javascript %}
+	</body>
+</html>
