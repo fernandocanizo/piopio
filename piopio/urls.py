@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from pips.views import Index
+from pips.views import Index, Profile
 
 
 admin.autodiscover()
@@ -23,4 +23,5 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', Index.as_view(), name='index'),
+    url(r'^user/(\w+)$', Profile.as_view()),
     ]

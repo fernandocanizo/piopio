@@ -1,0 +1,16 @@
+{% extends 'pips/base.html' %}
+{% block content %}
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<ul>
+				{% for pip in pips %}
+					<li>
+						<div class="well">
+							<span>{{ pip.text }}</span>
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}
