@@ -131,4 +131,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+# to have separate static assets by app
 STATIC_URL = '/static/'
+# to hold general project assets collected via `manage.py collectstatic`
+STATIC_ROOT = 'static'
+# define where `manage.py collectstatic` should look for assets
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static_local"),
+    os.path.join(BASE_DIR, "node_modules/jquery/dist"),
+    os.path.join(BASE_DIR, "node_modules/bootstrap/dist"),
+    os.path.join(BASE_DIR, "node_modules/bootswatch"),
+    ]
