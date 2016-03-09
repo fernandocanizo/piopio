@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    'tweets.apps.TweetsConfig',
+    'pips',
     'bootstrap3',
 ]
 
